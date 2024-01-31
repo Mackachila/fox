@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff account</title>
+  <script defer src ="./index2.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style3.css">
+   <link rel="icon" type="image/png" href="favicon.jpg">
+</head>
+<body>
+        <div id="overlay"></div>
+  <nav>
+    <a href="home.html">Portal</a>
+    <a href="home.html">Our Courses</a>
+    <a href="home.html">Contact Us</a>
+  </nav>
+  
+  <div class="popup-form" id="popupForm">
+    <h1 id = "paymenttitle">SALARY STATUS</h1>
+    <label for="cardNumber">Start Date:</label>
+    <input type="number" id="cardNumber" placeholder="Format dd/mm/Yr">
+    <br>
+    <label for="expiryDate">End Date:</label>
+    <input type="number" id="expiryDate" placeholder="Format dd/mm/Yr">
+    <br><br>
+    <button >Check</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm()">Cancel</button>
+  </div>
+
+<div class="popup-form2" id="popupForm2">
+    <h1 id = "paymenttitle">STUDENT VALIDATION</h1>
+    <label for="cardNumber">Student's Admission number:</label>
+    <input type="number" id="cardNumber">
+    <br><br>
+        <button >Validate</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm2()">Cancel</button>
+  </div>
+
+  <div class="popup-form3" id="popupForm3">
+    <h1 id = "paymenttitle">HOST AN ONLINE CLASS</h1>
+    <p>NB: The default date for this class is todays date</p>
+    <label for="cardNumber">Expected Start Time:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Expected End time:</label>
+    <input type="text" id="cardNumber">
+    <br>
+    <label for="cardNumber">Set Password for this class:</label>
+    <input type="text" id="cardNumber">
+    <br><br>
+    <button >Generate a link for this class</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm3()">Cancel</button>
+  </div>
+
+  <div class="popup-form4" id="popupForm4">
+    <h1 id = "paymenttitle">CONTRACT RENEWAL</h1>
+    <label for="cardNumber">Contract Number/ Code:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Renewal Period:</label>
+    <input type="text" id="cardNumber">
+    <br>
+    <br><br>
+    <button >Renew</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm4()">Cancel</button>
+  </div>
+
+  <div class="popup-form5" id="popupForm5">
+    <h1 id = "paymenttitle">CONTRACT TERMINATION</h1>
+    <label for="cardNumber">Contract number:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Reason for termination:</label>
+    <p><textarea id="message" name="message" required placeholder="Tell us why you are terminating this contract."></textarea>
+    <br>
+    <br><br>
+    <button >Terminate</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm5()">Cancel</button>
+  </div>
+
+  <div class="popup-form6" id="popupForm6">
+    <h1 id = "paymenttitle">STUDENT FEE STATUS</h1>
+    <label for="cardNumber">Student's admission number:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Year of study:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Semester:</label>
+    <input type="text" id="cardNumber">
+    <br>
+    <br><br>
+    <button >Check</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm6()">Cancel</button>
+  </div>
+
+<main>
+    
+      <section id="portal" backgroun>
+      <h2>What do you want to do?</h2>
+      <ul>
+        <li>
+          <img src="portal.jpg" alt="Students">
+<h3>Validate a student</b></h3>
+<button id="open-btn" onclick="showPopupForm2(),closePopupForm(), closePopupForm6(), closePopupForm4(),closePopupForm5(), closePopupForm3()">Validate</button>
+</li>
+
+<li>
+<img src="staff.jpg" alt="Staff">
+<h3>Salaries and other benefits</h3>
+<button id="payButton" onclick="showPopupForm(),closePopupForm3(), closePopupForm2(), closePopupForm4(),closePopupForm5(), closePopupForm6()">Check</button>
+</li>
+
+<li>
+<img src="portal.jpg" alt="Staff">
+<h3>Check students fee status</h3>
+<button id="payButton" onclick="showPopupForm6(),closePopupForm(), closePopupForm2(), closePopupForm4(),closePopupForm5(), closePopupForm3()">Check</button>
+</li>
+
+<li>
+<img src="alumni.jpg" alt="Alumni">
+<h3>Host an Online Class</h3>
+ <button id="open-btn" onclick="showPopupForm3(),closePopupForm(), closePopupForm2(), closePopupForm4(),closePopupForm5(), closePopupForm6()">Start</button> 
+</li>
+<li>
+<img src="alumni.jpg" alt="Alumni">
+<h3>Renew/ Terminate Contract</h3>
+ <button id="open-btn" onclick="showPopupForm4(),closePopupForm(), closePopupForm2(), closePopupForm6(),closePopupForm5(), closePopupForm3()">Renew</button><br><br> <button id="open-btn" onclick="showPopupForm5(),closePopupForm(), closePopupForm2(), closePopupForm4(),closePopupForm6(), closePopupForm3()">Terminate</button>
+</li>
+</ul>
+</section>
+    
+    </div>
+    
+    You can aslso call us directly through 0704684936
+    <br><br><br><br><br><br><br><br>
+</main>
+
+<footer>
+   <p>&copy; 2023 Mackachila Computer College. All rights reserved.</p>
+</footer>
+</body>
+</html>

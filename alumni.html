@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alumni portal</title>
+	<script defer src ="./index3.js"></script>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<nav>
+		<a href="home.html">Home</a>
+		<a href="#courses">Our Courses</a>
+		<a href="#contact">Contact Us</a>
+	</nav>
+	<header>
+		<h1>Mackachila Computer College</h1>
+		<h4>P.O Box 234-00100: Nairobi Kenya</h4>
+		<h2 style="color: red">Alumni Portal</h2>
+
+		<section id="login">
+		<div class="container" align="center">
+<form id="form" action="post">
+<h2 align="center"> Login</h2>
+<div class="input-control">
+<input type="text" id="sadmnumber" name="sadmnumber" placeholder= "Certificate Number">
+<div class="error"></div><br>
+</div>
+<div class="input-control" >
+<input type="password" id="password" name="password" placeholder="Password">
+<div class="error"></div><br>
+</div>
+Show password <input type="checkbox" onclick="myFunction()">
+<button type="submit">Log in</button><br><br>
+Don't have account? <a href="new_alumni.html">Click Here</a>
+</form>
+</div>
+	</header>
+	<nav>
+		
+	</nav>
+		<main>
+			
+<section id="courses">
+<h2>Our Courses</h2>
+<ul>
+<li>
+<img src="courses.jpg" alt="Project 1">
+<h3>Our Courses</h3>
+<p>At Mackachila Computer College, we offer a number of courses in computer. All these courses can be registered through students portal or physically at our campus in Nairobi Times Towers 10<sup>th</sup> floor. <br> Bellow is a list of the courses offered:<br><br><br><br><br><br><br><br>
+<ol>
+<li> Computer application Packages (14 packages) in 2 months</li>
+<li> Web Development technologies</li>
+<li> Computer Networking</li>
+<li> Computer graphycs and design</li>
+<li> Computer Programming</li>
+<li> PC hardware and  troubleshooting</li></p>
+</ol>
+<a href="#">Register a course</a>
+</li>
+</ul>
+</section>
+<section id="contact">
+<h2>Contact Us</h2>
+<form>
+	Tell us Something or ask us a question<br>
+<p><input type="text" id="name" name="name" required placeholder="Name"></p>
+<p><input type="email" id="email" name="email" required placeholder="Email"></p>
+
+<p><textarea id="message" name="message" required placeholder="Write something to us."></textarea></p>
+<p><input type="submit" value="Send"></p>
+
+</form>
+</section>
+<p><a href="#">Back to Top</a></p>
+</main>
+<footer>
+	 <p>&copy; 2023 Jared Mackachila. All rights reserved.</p>
+</footer>
+</body>
+</html>

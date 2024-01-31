@@ -1,0 +1,38 @@
+const mysql = require('mysql');
+const express = require('express');
+
+const app = express();
+
+app.use(express.urlencoded({ extended: true }));
+
+app.post('/form', (req, res) => {
+  const name = req.body.name;
+  const email = req.body.email;
+
+  const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'JareD6470',
+    database: 'mackachila_college'
+  });
+
+  connection.connect(err => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+
+    connection.query('INSERT INTO new_student (name, admission, email, contact, password) VALUES (?, ?, ?, ?, ?)', [name, email], (err, result) => {
+      if (err) {
+        console.error(err);
+        return;
+      }
+
+      res.send('User added successfully!');
+    });
+  });
+});
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000.');
+});

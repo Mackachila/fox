@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Student account</title>
+	<script defer src ="./index2.js"></script>
+	<link rel="stylesheet" type="text/css" href="./style3.css">
+	 <link rel="icon" type="image/png" href="favicon.jpg">
+</head>
+<body>
+	      <div id="overlay"></div>
+	<nav>
+		<a href="home.html">Portal</a>
+		<a href="home.html">Our Courses</a>
+		<a href="home.html">Contact Us</a>
+	</nav>
+	
+  <div class="popup-form" id="popupForm">
+    <h1 id = "paymenttitle">LIPA NA M-PESA</h1>
+    <p>Once you click Pay, check your phone to enter your M-pesa pin</p><br>
+    <label for="cardNumber">M-Pesa Number:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="expiryDate">Amount (Ksh) :</label>
+    <input type="number" id="expiryDate">
+    <br><br>
+    <button >Pay</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm()">Cancel</button>
+  </div>
+
+<div class="popup-form2" id="popupForm2">
+    <h1 id = "paymenttitle">REGISTER A COURSE</h1>
+    <label for="cardNumber">Course Title:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Course Code:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Stage e.g Beginner or Continuing:</label>
+    <input type="number" id="cardNumber">
+    <br><br>
+    <button >Register</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm2()">Cancel</button>
+  </div>
+
+  <div class="popup-form3" id="popupForm3">
+    <h1 id = "paymenttitle">JOIN ONLINE CLASS</h1>
+    <label for="cardNumber">Admission number:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Unit Code:</label>
+    <input type="text" id="cardNumber">
+    <br>
+    <br><br>
+    <button >Join</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm3()">Cancel</button>
+  </div>
+
+  <div class="popup-form4" id="popupForm4">
+    <h1 id = "paymenttitle">EXAMS REGISTRATION</h1>
+    <label for="cardNumber">Admission number:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Semester Code:</label>
+    <input type="text" id="cardNumber">
+    <br>
+    <br><br>
+    <button >Register</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm4()">Cancel</button>
+  </div>
+
+  <div class="popup-form5" id="popupForm5">
+    <h1 id = "paymenttitle">CHECK AND PRINT RESULTS</h1>
+    <label for="cardNumber">Admission number:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Year of study:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Semester:</label>
+    <input type="text" id="cardNumber">
+    <br>
+    <br><br>
+    <button >Check</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm5()">Cancel</button>
+  </div>
+
+<main>
+		
+			<section id="portal" backgroun>
+			<h2>Choose a service</h2>
+			<ul>
+				<li>
+					<img src="portal.jpg" alt="Students">
+<h3>Course Registration</b></h3>
+<button id="open-btn" onclick="showPopupForm2(), closePopupForm(), closePopupForm3 ()">Register</button>
+</li>
+
+<li>
+<img src="staff.jpg" alt="Staff">
+<h3>Fees and others transactions. mxsnmncnc kejdkrjrkjk krjkfrjkrjfk kjfkrjfkrfj rkjfkrjfkr kkjfkrjfk kjfkrfjkrfj rkfjkrfjkrf </h3>
+<button id="payButton" onclick="showPopupForm(), closePopupForm2(), closePopupForm3()">Pay</button>
+</li>
+<li>
+<img src="alumni.jpg" alt="Alumni">
+<h3>Our Online Classes</h3>
+ <button id="open-btn" onclick="showPopupForm3(), closePopupForm(), closePopupForm2()">Join</button> 
+</li>
+<li>
+<img src="alumni.jpg" alt="Alumni">
+<h3>Exams Registration and results</h3>
+ <button id="open-btn" onclick="showPopupForm4()">Register Exams</button><br><br> <button id="open-btn" onclick="showPopupForm5()">Check Results</button>
+</li>
+</ul>
+</section>
+    
+    </div>
+    
+    You can aslso call us directly through 0704684936
+    <br><br><br><br><br><br><br><br>
+</main>
+
+<footer>
+	 <p>&copy; 2023 Mackachila Computer College. All rights reserved.</p>
+</footer>
+</body>
+</html>
